@@ -1,0 +1,429 @@
+/*--------------------
+-------fonts--------
+--------------------*/
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins-Bold.eot');
+    src: url('Poppins-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Poppins-Bold.woff2') format('woff2'),
+        url('Poppins-Bold.woff') format('woff'),
+        url('Poppins-Bold.ttf') format('truetype'),
+        url('Poppins-Bold.svg#Poppins-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins-Light.eot');
+    src: url('Poppins-Light.eot?#iefix') format('embedded-opentype'),
+        url('Poppins-Light.woff2') format('woff2'),
+        url('Poppins-Light.woff') format('woff'),
+        url('Poppins-Light.ttf') format('truetype'),
+        url('Poppins-Light.svg#Poppins-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins-Regular.eot');
+    src: url('Poppins-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Poppins-Regular.woff2') format('woff2'),
+        url('Poppins-Regular.woff') format('woff'),
+        url('Poppins-Regular.ttf') format('truetype'),
+        url('Poppins-Regular.svg#Poppins-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('OpenSans-Bold.eot');
+    src: url('OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('OpenSans-Bold.woff2') format('woff2'),
+        url('OpenSans-Bold.woff') format('woff'),
+        url('OpenSans-Bold.ttf') format('truetype'),
+        url('OpenSans-Bold.svg#OpenSans-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*--------------------
+--------reset--------
+--------------------*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html {
+	height: 100%;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	background: green;
+	font-family: 'Poppins', sans-serif;
+	color: #333333;
+}
+
+/*--------------------
+--------header--------
+--------------------*/
+
+.header {
+	width: 100%;
+	position: fixed;
+	height: 135px;
+	background-color: #fff;
+	z-index: 999;
+}
+
+.header__wrapper {
+	display: flex;
+	justify-content: space-between;
+	padding: 37px 88px 43px 105px;
+}
+
+.header__link-logo {
+	line-height: 54px;
+}
+
+.header__logo {
+	vertical-align: middle;
+}
+
+.header__nav-list {
+	display: flex;
+	align-items: center;
+	height: 54px;
+	margin-left: 127px;
+}
+
+.header__nav-list li {
+	margin-right: 75px;
+}
+
+.header__nav-list li:last-child {
+	margin-right: 0px;
+}
+
+.link {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.header__nav-link {
+	color: #000;
+}
+
+.header__controls {
+	display: flex;
+	align-items: center;
+}
+
+.header__dropdown {
+	color: #000;
+	margin-right: 51px;
+}
+
+.btn_color_gradient {
+	background: linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%);
+	color: #fff;
+}
+
+.btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+	border-radius: 100px;
+	width: 157px;
+	height: 54px;
+}
+
+/*--------------------
+----easy-solution-----
+--------------------*/
+
+.easy-solution {
+	padding-top: 135px;
+	background: linear-gradient(174.48deg, #FD749B -12.41%, #281AC8 88.56%);
+	height: 810px;
+	overflow: hidden;
+}
+
+.container {
+	max-width: 1300px;
+	margin: 0 auto;
+	padding: 0 180px;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.easy-solution__discription {
+	max-width: 520px;
+	margin-top: 150px;
+}
+
+.easy-solution__main-title {
+	font-style: normal;
+	font-weight: 300;
+	font-size: 42px;
+	line-height: 60px;
+	letter-spacing: 1px;
+}
+
+.easy-solution__main-title span {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+}
+
+.easy-solution__text {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 27px;
+	margin-top: 21px;
+}
+
+.text_color_white {
+	color: #fff;
+}
+
+.easy-solution__btn {
+	margin-top: 30px;
+}
+
+.link_color_gradient {
+	background: linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+}
+
+.btn_color_white {
+	background-color: #fff;
+}
+
+.easy-solution__bg-img {
+	background-image: url("../img/easy-solution-img.png");
+	height: 560px;
+	width: 670px;
+	margin: 60px -110px 0 0;
+}
+
+.bg-img {
+	background-repeat: no-repeat;
+}
+
+.bg-path {
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.easy-solutione__bg-path {
+	background-image: url("../img/first-path.svg");
+	height: 250px;
+	margin-top: -20px;
+}
+
+/*--------------------
+-------welcome--------
+--------------------*/
+
+.welcome {
+	background-color: #fff;
+}
+
+.welcome__bg-img {
+	background-image: url("../img/welcome-img.png");
+	height: 395px;
+	width: 630px;
+	margin: 40px 0 0 -40px;
+}
+
+.welcome__discription {
+	max-width: 545px;
+}
+
+.discription {
+	position: relative;
+}
+
+.title {
+	background: linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+	font-style: normal;
+	font-weight: 700;
+}
+
+.hr_color_pink::before {
+	position: absolute;
+	content: '';
+	height: 6px;
+	width: 50px;
+	top: 65px;
+	border-radius: 10px;
+	background-color:#FD749B;
+}
+
+.title_size_28px {
+	font-size: 28px;
+	line-height: 65px;
+}
+
+.title_size_24px {
+	font-size: 24px;
+	line-height: 39px;
+}
+
+.title_size_18px {
+	font-size: 18px;
+	line-height: 65px;
+}
+
+.text {
+	margin-top: 44px;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 16px;
+	line-height: 40px;
+}
+
+.welcome__btn {
+	margin-top: 35px;
+}
+
+/*--------------------
+-------our-info-------
+--------------------*/
+
+.our-info {
+	background: linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%);
+	height: 700px;
+}
+
+.our-info__wrapper {
+	position: relative;
+	background-color: #fff;
+	top: 210px;
+	height: 380px;
+	border-radius: 35px;
+}
+
+.our-info__items {
+	display: flex;
+	justify-content: space-between;
+	padding: 5px 65px 0;
+}
+
+.our-info__items::before {
+	position: absolute;
+	content: '';
+	height: 1px;
+	width: 100%;
+	top: 71px;
+	background-color:#BBBBBB;
+	left: 0;
+}
+
+.our-info__rates-item {
+	display: flex;
+	margin-top: 57px;
+}
+
+.our-info__icon-cell {
+	display: flex;
+	margin-right: 50px;
+	align-items: center;
+	height: 28px;
+}
+
+.our-info__btc-icon {
+	background-image: url("../img/btc-icon.svg");
+	width: 28px;
+	height: 28px;
+	margin-right: 16px;
+}
+
+.our-info__text {
+	font-size: 14px;
+	font-weight: 400;
+	font-style: normal;
+	line-height: 21px;
+}
+
+.our-info__text span {
+	font-weight: 700;
+}
+
+.our-info__rates-buy-sell {
+	margin-top: 3px;
+}
+
+.our-info__eth-icon {
+	background-image: url("../img/eth-icon.svg");
+	width: 17px;
+	height: 30px;
+	margin: 0 22px 0 5px;
+}
+
+.our-info__rates-buy-sell .our-info__text:last-child {
+	margin-top: 20px;
+}
