@@ -262,7 +262,8 @@ body {
 	background-image: url("../img/easy-solution-img.png");
 	height: 560px;
 	width: 670px;
-	margin: 60px -110px 0 0;
+	margin-top: 60px;
+	transform: translateX(110px);
 }
 
 .bg-img {
@@ -277,7 +278,7 @@ body {
 .easy-solutione__bg-path {
 	background-image: url("../img/first-path.svg");
 	height: 250px;
-	margin-top: -20px;
+	transform: translateY(-20px);
 }
 
 /*--------------------
@@ -293,7 +294,8 @@ body {
 	background-image: url("../img/welcome-img.png");
 	height: 395px;
 	width: 630px;
-	margin: 40px 0 0 -40px;
+	margin-top: 40px;
+	transform: translateX(-40px);
 }
 
 .welcome__discription {
@@ -366,12 +368,14 @@ body {
 	top: 210px;
 	height: 380px;
 	border-radius: 35px;
+	/*overflow: auto;*/
 }
 
 .our-info__columns {
 	display: flex;
 	justify-content: space-between;
 	padding: 5px 65px 0;
+	height: 700px;
 }
 
 .our-info__columns::before {
@@ -384,14 +388,19 @@ body {
 	left: 0;
 }
 
+.our-info__rates {
+	width: 230px;
+}
+
 .our-info__column-item {
 	display: flex;
-	margin-top: 57px;
+	justify-content: space-between;
+	margin-top: 50px;
+	position: relative;
 }
 
 .our-info__icon-cell {
 	display: flex;
-	margin-right: 50px;
 	align-items: center;
 	height: 28px;
 }
@@ -407,15 +416,17 @@ body {
 	font-size: 14px;
 	font-weight: 400;
 	font-style: normal;
-	line-height: 21px;
+	line-height: 27px;
+	letter-spacing: 0.4px;
+
 }
 
 .our-info__text span {
 	font-weight: 700;
 }
 
-.our-info__buy-sell {
-	margin-top: 3px;
+.our-info__price {
+	text-align: right;
 }
 
 .our-info__eth-icon {
@@ -425,6 +436,92 @@ body {
 	margin: 0 22px 0 5px;
 }
 
-.our-info__buy-sell .our-info__text:last-child {
+.our-info__price .our-info__text:nth-child(2) {
 	margin-top: 20px;
+}
+
+.our-info__reserves {
+	width: 300px;
+}
+
+.our-info__reserves-title {
+	display: flex;
+	justify-content: center;
+}
+
+.our-info__bank-icon {
+	background-image: url("../img/bank-icon.svg");
+	height: 27px;
+	width: 27px;
+	margin-right: 17px;
+}
+
+.our-info__reserves .our-info__column-item:nth-child(1n+3) {
+	margin-top: 37px;
+}
+
+.our-info__exchanges {
+	position: relative;
+	width: 250px;
+}
+
+.our-info__exchanges-title {
+	display: flex;
+	justify-content: end;
+}
+
+.our-info__btn {
+	position: absolute;
+	font-size: 8px;
+	line-height: 25px;
+	border-radius: 5px;
+	width: 86px;
+	height: 25px;
+	text-transform: none;
+	margin-top: 18px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.our-info__arrow {
+	display: inline-block;
+	background-image: url("../img/arrow.svg");
+	margin: 0 2px;
+	width: 15px;
+	height: 6px;
+	transform: translateY(-2px);
+}
+
+.our-info__double-arrow {
+	background-image: url("../img/double-arrow.svg");
+	width: 15px;
+	height: 12px;
+	transform: translateY(8px);
+}
+
+.our-info__column-hr::before {
+	position: absolute;
+	content: '';
+	height: 1px;
+	width: 100%;
+	top: 46px;
+	background-color:#BBBBBB;
+	left: 0;
+}
+
+.our-info__exchanges .our-info__column-item:nth-child(1n+4) {
+	margin-top: 40px;
+}
+
+::-webkit-scrollbar {
+	width: 3px;
+
+}
+
+::-webkit-scrollbar-track {
+	background-color: #E5E5E5;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #FD749B;
 }
