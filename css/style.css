@@ -286,6 +286,7 @@ body {
 
 .welcome {
 	background-color: #fff;
+	height: 400px;
 }
 
 .welcome__bg-img {
@@ -367,13 +368,13 @@ body {
 	border-radius: 35px;
 }
 
-.our-info__items {
+.our-info__columns {
 	display: flex;
 	justify-content: space-between;
 	padding: 5px 65px 0;
 }
 
-.our-info__items::before {
+.our-info__columns::before {
 	position: absolute;
 	content: '';
 	height: 1px;
@@ -383,7 +384,7 @@ body {
 	left: 0;
 }
 
-.our-info__rates-item {
+.our-info__column-item {
 	display: flex;
 	margin-top: 57px;
 }
@@ -413,7 +414,7 @@ body {
 	font-weight: 700;
 }
 
-.our-info__rates-buy-sell {
+.our-info__buy-sell {
 	margin-top: 3px;
 }
 
@@ -424,6 +425,6 @@ body {
 	margin: 0 22px 0 5px;
 }
 
-.our-info__rates-buy-sell .our-info__text:last-child {
+.our-info__buy-sell .our-info__text:last-child {
 	margin-top: 20px;
 }
