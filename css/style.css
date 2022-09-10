@@ -383,17 +383,15 @@ body {
 	background-color: #fff;
 	height: 380px;
 	border-radius: 35px;
-	/*overflow: auto;*/
 }
 
-.our-info__columns {
+.our-info__columns-titles {
 	display: flex;
 	justify-content: space-between;
 	padding: 5px 65px 0;
-	height: 700px;
 }
 
-.our-info__columns::before {
+.our-info__columns-titles::before {
 	position: absolute;
 	content: '';
 	height: 1px;
@@ -407,10 +405,9 @@ body {
 	width: 230px;
 }
 
-.our-info__column-item {
+.our-info__column-item-content {
 	display: flex;
 	justify-content: space-between;
-	margin-top: 50px;
 	position: relative;
 }
 
@@ -425,6 +422,10 @@ body {
 	width: 28px;
 	height: 28px;
 	margin-right: 16px;
+}
+
+.our-info__rates .our-info__column-item-content:nth-child(1n+2) {
+	margin-top: 50px;
 }
 
 .our-info__text {
@@ -471,13 +472,8 @@ body {
 	margin-right: 17px;
 }
 
-.our-info__reserves .our-info__column-item:nth-child(1n+3) {
+.our-info__reserves .our-info__column-item-content:nth-child(1n+2) {
 	margin-top: 37px;
-}
-
-.our-info__exchanges {
-	position: relative;
-	width: 250px;
 }
 
 .our-info__exchanges-title {
@@ -485,17 +481,20 @@ body {
 	justify-content: end;
 }
 
+.our-info__exchanges-btn {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 15px;
+}
+
 .our-info__btn {
-	position: absolute;
 	font-size: 8px;
 	line-height: 25px;
 	border-radius: 5px;
 	width: 86px;
 	height: 25px;
 	text-transform: none;
-	margin-top: 18px;
-	left: 50%;
-	transform: translateX(-50%);
+	text-align: center;
 }
 
 .our-info__arrow {
@@ -524,19 +523,41 @@ body {
 	left: 0;
 }
 
-.our-info__exchanges .our-info__column-item:nth-child(1n+4) {
+.our-info__exchanges .our-info__column-item-content:nth-child(1n+3) {
 	margin-top: 40px;
 }
 
-::-webkit-scrollbar {
-	width: 3px;
-
+.our-info__scrollbar-container {
+	margin: 25px 25px 30px;
+	height: 250px;
+	overflow: auto;
 }
 
-::-webkit-scrollbar-track {
+.our-info__column-item{
+	padding-top: 40px;
+}
+
+.our-info__exchanges {
+	padding-top: 0;
+	width: 250px;
+}
+
+.our-info__columns-content {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 35px;
+	height: 700px;
+}
+
+.our-info__scrollbar-container::-webkit-scrollbar {
+	width: 3px;
+	height: 50px;
+}
+
+.our-info__scrollbar-container::-webkit-scrollbar-track {
 	background-color: #E5E5E5;
 }
 
-::-webkit-scrollbar-thumb {
+.our-info__scrollbar-container::-webkit-scrollbar-thumb {
 	background-color: #FD749B;
 }
