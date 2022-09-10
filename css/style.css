@@ -207,7 +207,7 @@ body {
 	padding: 0 180px;
 }
 
-.wrapper {
+.easy-solution-wrapper {
 	display: flex;
 	justify-content: space-between;
 }
@@ -270,17 +270,6 @@ body {
 	background-repeat: no-repeat;
 }
 
-.bg-path {
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-.easy-solutione__bg-path {
-	background-image: url("../img/first-path.svg");
-	height: 250px;
-	transform: translateY(-20px);
-}
-
 /*--------------------
 -------welcome--------
 --------------------*/
@@ -288,6 +277,31 @@ body {
 .welcome {
 	background-color: #fff;
 	height: 400px;
+	position: relative;
+}
+
+.bg-path {
+	background-repeat: no-repeat;
+	background-size: 100% 130%;
+	position: absolute;
+	width: 100%;
+}
+
+.welcome__bg-path-top {
+	background-image: url("../img/first-path.svg");
+	height: 230px;
+	transform: translateY(-198px);
+}
+
+.welcome__bg-path-bottom {
+	background-image: url("../img/second-path.svg");
+	height: 775px;
+	transform: translateY(-50px);
+}
+
+.welcome__wrapper {
+	display: flex;
+	justify-content: space-between;
 }
 
 .welcome__bg-img {
@@ -347,10 +361,11 @@ body {
 	font-style: normal;
 	font-size: 16px;
 	line-height: 40px;
+	letter-spacing: .7px;
 }
 
 .welcome__btn {
-	margin-top: 35px;
+	margin-top: 45px;
 }
 
 /*--------------------
@@ -360,12 +375,12 @@ body {
 .our-info {
 	background: linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%);
 	height: 700px;
+	padding-top: 370px;
 }
 
 .our-info__wrapper {
 	position: relative;
 	background-color: #fff;
-	top: 210px;
 	height: 380px;
 	border-radius: 35px;
 	/*overflow: auto;*/
